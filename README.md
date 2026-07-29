@@ -2,6 +2,10 @@
 
 A retrieval-augmented chatbot that answers questions about Krishn's resume. Upload a PDF, it gets chunked and embedded into a Postgres vector store, and the chat assistant searches that store to ground its answers.
 
+
+https://github.com/user-attachments/assets/baa97b38-e984-4fe3-b3d5-e4be8380da00
+
+
 ## How it works
 
 - **Upload** (`/upload`) — a PDF is parsed with `pdf-parse`, split into ~150-character chunks with `@langchain/textsplitters`, embedded with Voyage AI (`voyage-3.5-lite`), and stored in Postgres via Drizzle.
